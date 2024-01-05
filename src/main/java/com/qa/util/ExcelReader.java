@@ -166,12 +166,4 @@ public class ExcelReader {
 	        throw new RuntimeException(e);
 	    }
 	}
-
-    private int getNumericCellValue(Cell cell) {
-        if (cell == null || cell.getCellType() == CellType.BLANK) {
-            return 0;
-        } else {
-            return (int) cell.getNumericCellValue();
-        }
-    }
 }
